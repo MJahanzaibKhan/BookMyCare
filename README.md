@@ -12,7 +12,7 @@ This project is a hospital booking system designed to simplify the appointment p
   - Access patient information.
 
 ## Technology Stack
-- **Front-End**: HTML, CSS
+- **Front-End**: HTML, CSS, Vite.js
 - **Back-End**: Node.js, Express
 - **Database**: MongoDB
 
