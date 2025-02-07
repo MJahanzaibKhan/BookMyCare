@@ -1,7 +1,5 @@
-Frontend/components/NotFound.jsx
- 
 import { Link } from "react-router-dom";
- 
+
 const NotFound = () => {
   return (
     <section className="bg-transparent flex items-center justify-center h-full">
@@ -29,5 +27,5 @@ const NotFound = () => {
     </section>
   );
 };
- 
+
 export default NotFound;

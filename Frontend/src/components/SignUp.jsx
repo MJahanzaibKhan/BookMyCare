@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaLock, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import PasswordStrengthBar from 'react-password-strength-bar'; // Importing PasswordStrengthBar
- 
+
 const SignUp = () => {
     const [formData, setFormData] = useState({
         fullName: '',
@@ -13,12 +13,12 @@ const SignUp = () => {
         phoneNumber: '',
         file: null, // To store the uploaded file
     });
- 
+
     const handleChange = (e) => {
         const { name, value, type, files } = e.target;
         setFormData({ ...formData, [name]: type === 'file' ? files[0] : value });
     };
- 
+
     const handleSubmit = (e) => {
         e.preventDefault();
         // Here you would typically send the form data to your backend
@@ -34,7 +34,7 @@ const SignUp = () => {
         });
         // You might want to redirect the user or show a success message here
     };
- 
+
     return (
         <div className="bg-light min-h-screen flex items-center justify-center p-4">
             <motion.div
@@ -43,7 +43,7 @@ const SignUp = () => {
                 transition={{ duration: 0.5 }}
                 className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full"
             >
-                <h2 className="text-3xl font-bold text-primary mb-6 text-center">Sign Up for Book My Care</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6 text-center">Sign Up for Health Nest</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
@@ -92,7 +92,7 @@ const SignUp = () => {
                                 required
                             />
                         </div>
- 
+
                         {/* Password Strength Checker */}
                         <PasswordStrengthBar password={formData.password} />
                     </div>
@@ -159,5 +159,5 @@ const SignUp = () => {
         </div>
     );
 };
- 
+
 export default SignUp;

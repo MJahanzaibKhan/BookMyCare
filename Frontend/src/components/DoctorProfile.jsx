@@ -1,5 +1,3 @@
-Frontend/components/DoctorProfile.jsx
- 
 import React from 'react';
 import { FaCalendarPlus } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
