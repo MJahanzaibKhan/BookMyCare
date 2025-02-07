@@ -56,26 +56,6 @@ const AboutUs = () => {
           </motion.div>
         ))}
       </div>
-
-      {/* Team Section */}
-      <div className="bg-light p-8 rounded-lg">
-        <h2 className="text-3xl font-bold text-center text-primary mb-8">Meet Our Team</h2>
-        <div className="flex justify-center">
-          <motion.div
-            className="team-member bg-white p-6 shadow-md rounded-lg text-center border border-accent max-w-sm"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <img
-              src={profilePic}
-              alt="Team Member"
-              className="w-48 h-48 rounded-full mx-auto mb-6 object-cover"
-            />
-            <h3 className="text-xl font-semibold mb-2 text-primary">Yazdan Haider</h3>
-            <p className="text-lg text-secondary">Full Stack Developer</p>
-          </motion.div>
-        </div>
-      </div>
     </div>
   );
 };
